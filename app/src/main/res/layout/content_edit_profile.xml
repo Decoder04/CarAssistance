@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="52dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.EditProfileActivity"
+    tools:showIn="@layout/activity_edit_profile"
+    android:weightSum="1"
+    android:id="@+id/container">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/containtholder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/topSectionHolder">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Details"
+                    android:textSize="20sp"
+                    android:id="@+id/toptext" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:id="@+id/topFirstHolder"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="textCapWords"
+                        android:hint="Name"
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/topSecondHolder"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@android:drawable/sym_action_email"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email add."
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/topThirdHolder"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@android:drawable/ic_menu_call"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="number"
+                        android:hint="Contact No."
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="1dp"
+                    android:background="#bebdbd"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/buttomSectionHolder"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Car Details"
+                    android:textSize="20sp"
+                    android:id="@+id/buttomtext" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:id="@+id/buttomFirstHolder"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewbuttom"
+                        android:src="@android:drawable/ic_menu_send"
+                        android:longClickable="false"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="text"
+                        android:hint="Regd. No."
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttomSecondHolder"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2buttom"
+                        android:src="@android:drawable/ic_menu_sort_by_size"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="text"
+                        android:hint="Maker"
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttomThirdHolder"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3buttom"
+                        android:src="@android:drawable/ic_menu_today"
+                        android:layout_gravity="center" />
+
+                    <com.rey.material.widget.EditText
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:inputType="text"
+                        android:hint="Build Model"
+                        app:et_inputId="@+id/textfield_et_char_counter_input"
+                        app:et_supportMode="none"
+                        app:v_styleId="@array/edittext"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
